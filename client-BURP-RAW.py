@@ -1,13 +1,13 @@
 import socket
 import hmac
-from hashlib import sha256
+from hashlib import md5
 
-SECRET_KEY = b'1tsasecret!'
+SECRET_KEY = b'!@#$%^'
 PROXY_ADDRESS = ('127.0.0.1', 8080)
 
 def generate_hmac(message):
     # Create an HMAC object using the secret key and SHA-256 hash algorithm
-    key = hmac.new(SECRET_KEY, digestmod=sha256)
+    key = hmac.new(SECRET_KEY, digestmod=md5)
     # Update the HMAC with the encoded message
     key.update(message.encode('utf-8'))
     # Return the digest (hash) of the HMAC
