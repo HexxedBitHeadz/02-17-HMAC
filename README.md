@@ -1,2 +1,2 @@
-# 02-24-HMAC
+# 02-17-HMAC
 Companion code for https://www.hexxedbitheadz.com/blog-izznyhmac/ blog
